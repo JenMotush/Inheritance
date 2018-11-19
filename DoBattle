@@ -71,8 +71,12 @@ public class Program
 		public override void Attack()
 		{
 			Random number = new Random();
-			var amount = number.Next(Strength) + Energy;
-			Console.WriteLine(String.Format("{0} charges for {1} damage (includes + {2})", Name, amount, Energy));
+			var amount = number.Next(10) + Energy;
+			
+			Energy -= amount;
+			
+			base.Attack();
+			Console.WriteLine(String.Format("        (Wizard {0} depleted {1} energy)", Name, amount, Energy));
 											 
 		}
 	}
