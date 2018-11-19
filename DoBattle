@@ -56,7 +56,7 @@ public class Program
 		{
 			Random number = new Random();
 			var amount = number.Next(Strength) + Bonus;
-			//Console.WriteLine($"{Name} charges for {amount} damage (includes +{Bonus}");
+			//Console.WriteLine($"{Name} charges for {amount} damage (includes +{Bonus} bonus");
 			Console.WriteLine(String.Format("{0} charges for {1} damage (includes + {2})", Name, amount, Bonus));
 			
 									 
